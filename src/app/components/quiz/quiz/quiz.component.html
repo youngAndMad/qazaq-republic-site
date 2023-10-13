@@ -1,0 +1,73 @@
+<div class="container">
+	<div class="quiz">
+		<div *ngIf="!isReview;">
+			<h2 style="padding-left: 15px;" class="navbar brand">{{ quiz.name }}</h2>
+			<div class="questions">
+				<div class="question-item" *ngFor="let question of quiz.questions; let i = index">
+					<p class="question_value">{{ question.id }}. {{ question.value }}</p>
+					<div *ngFor="let answer of question.answers; let j = index">
+						<label class="question">
+							<input type="radio" [value]="j" name="q{{ i }}" (change)="choose(question.id,answer.id)" />
+							{{ answer.value }}
+						</label>
+					</div>
+				</div>
+			</div>
+
+			<div class="quiz_submit_btn">
+				<button class="btn btn-primary" (click)="submit()"
+					[disabled]="quiz.questions.length !== selectedAnswers.length">Submit</button>
+			</div>
+		</div>
+		<div *ngIf="isReview">
+			<h2 class="navbar brand">{{ quiz.name }}</h2>
+			<div class="questions">
+				<div class="question-item question" *ngFor="let rev of review">
+					<p class="question_value">{{ findQuestion(rev.questionId).id }}. {{
+						findQuestion(rev.questionId).value
+						}}</p>
+					<div>
+						<div *ngFor="let answer of findQuestion(rev.questionId).answers">
+							<label [ngClass]="{
+							'correct_answer': answer.id === rev.correctAnswer,
+							'incorrect_answer': answer.id === rev.userAnswer && answer.id !== rev.correctAnswer
+						}">
+								<input type="radio" [checked]="answer.id === rev.userAnswer" disabled>
+								{{ answer.value }}
+							</label>
+						</div>
+					</div>
+				</div>
+			</div>
+			<button class="btn btn-primary" type="submit" (click)="goToResultPage()">Go to result page</button>
+		</div>
+	</div>
+</div>
+<!-- Button trigger modal -->
+<div class="container container_second">
+	<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+		Launch demo modal
+	</button>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+	aria-hidden="true">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				...
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				<button type="button" class="btn btn-primary">Save changes</button>
+			</div>
+		</div>
+	</div>
+</div>

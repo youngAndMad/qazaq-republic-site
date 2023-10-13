@@ -1,0 +1,107 @@
+[
+    {
+        "id": 1,
+        "username": "John Smith",
+        "total": 90
+    },
+    {
+        "id": 2,
+        "username": "Jane Doe",
+        "total": 85
+    },
+    {
+        "id": 3,
+        "username": "Michael Johnson",
+        "total": 78
+    },
+    {
+        "id": 4,
+        "username": "Emily Wilson",
+        "total": 92
+    },
+    {
+        "id": 5,
+        "username": "David Lee",
+        "total": 88
+    },
+    {
+        "id": 6,
+        "username": "Sarah Brown",
+        "total": 95
+    },
+    {
+        "id": 7,
+        "username": "Matthew Davis",
+        "total": 91
+    },
+    {
+        "id": 8,
+        "username": "Olivia Martinez",
+        "total": 89
+    },
+    {
+        "id": 9,
+        "username": "William Anderson",
+        "total": 87
+    },
+    {
+        "id": 10,
+        "username": "Sophia Taylor",
+        "total": 93
+    },
+    {
+        "id": 11,
+        "username": "James Wilson",
+        "total": 86
+    },
+    {
+        "id": 12,
+        "username": "Emma Moore",
+        "total": 94
+    },
+    {
+        "id": 13,
+        "username": "Daniel Johnson",
+        "total": 79
+    },
+    {
+        "id": 14,
+        "username": "Ava Brown",
+        "total": 96
+    },
+    {
+        "id": 15,
+        "username": "Joseph Lee",
+        "total": 83
+    },
+    {
+        "id": 16,
+        "username": "Chloe Smith",
+        "total": 97
+    },
+    {
+        "id": 17,
+        "username": "Benjamin Harris",
+        "total": 84
+    },
+    {
+        "id": 18,
+        "username": "Mia Davis",
+        "total": 98
+    },
+    {
+        "id": 19,
+        "username": "Alexander Johnson",
+        "total": 80
+    },
+    {
+        "id": 20,
+        "username": "Ella Martinez",
+        "total": 99
+    },
+    {
+        "id": 21,
+        "username": "Daneker Kaliaskaruly",
+        "total": 100
+    }
+]

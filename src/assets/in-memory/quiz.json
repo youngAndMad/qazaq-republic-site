@@ -1,0 +1,216 @@
+{
+    "name": "Kazakh Nation Quiz",
+    "questions": [
+        {
+            "id": 1,
+            "value": "What is the capital of Kazakhstan?",
+            "answers": [
+                {
+                    "id": 1,
+                    "isCorrect": true,
+                    "value": "Nur-Sultan"
+                },
+                {
+                    "id": 2,
+                    "isCorrect": false,
+                    "value": "Almaty"
+                },
+                {
+                    "id": 3,
+                    "isCorrect": false,
+                    "value": "Astana"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "value": "Which mountain range is located in Kazakhstan?",
+            "answers": [
+                {
+                    "id": 4,
+                    "isCorrect": true,
+                    "value": "Tian Shan"
+                },
+                {
+                    "id": 5,
+                    "isCorrect": false,
+                    "value": "Himalayas"
+                },
+                {
+                    "id": 6,
+                    "isCorrect": false,
+                    "value": "Andes"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "value": "What is the traditional Kazakh instrument?",
+            "answers": [
+                {
+                    "id": 7,
+                    "isCorrect": true,
+                    "value": "Dombra"
+                },
+                {
+                    "id": 8,
+                    "isCorrect": false,
+                    "value": "Guitar"
+                },
+                {
+                    "id": 9,
+                    "isCorrect": false,
+                    "value": "Violin"
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "value": "Which desert is partly located in Kazakhstan?",
+            "answers": [
+                {
+                    "id": 10,
+                    "isCorrect": true,
+                    "value": "Kyzylkum Desert"
+                },
+                {
+                    "id": 11,
+                    "isCorrect": false,
+                    "value": "Sahara Desert"
+                },
+                {
+                    "id": 12,
+                    "isCorrect": false,
+                    "value": "Gobi Desert"
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "value": "What is the national dish of Kazakhstan?",
+            "answers": [
+                {
+                    "id": 13,
+                    "isCorrect": true,
+                    "value": "Beshbarmak"
+                },
+                {
+                    "id": 14,
+                    "isCorrect": false,
+                    "value": "Sushi"
+                },
+                {
+                    "id": 15,
+                    "isCorrect": false,
+                    "value": "Pizza"
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "value": "Which body of water borders Kazakhstan to the east?",
+            "answers": [
+                {
+                    "id": 16,
+                    "isCorrect": true,
+                    "value": "Caspian Sea"
+                },
+                {
+                    "id": 17,
+                    "isCorrect": false,
+                    "value": "Black Sea"
+                },
+                {
+                    "id": 18,
+                    "isCorrect": false,
+                    "value": "Mediterranean Sea"
+                }
+            ]
+        },
+        {
+            "id": 7,
+            "value": "What is the official language of Kazakhstan?",
+            "answers": [
+                {
+                    "id": 19,
+                    "isCorrect": true,
+                    "value": "Kazakh"
+                },
+                {
+                    "id": 20,
+                    "isCorrect": false,
+                    "value": "Russian"
+                },
+                {
+                    "id": 21,
+                    "isCorrect": false,
+                    "value": "English"
+                }
+            ]
+        },
+        {
+            "id": 8,
+            "value": "Which famous spaceport is located in Kazakhstan?",
+            "answers": [
+                {
+                    "id": 22,
+                    "isCorrect": true,
+                    "value": "Baikonur Cosmodrome"
+                },
+                {
+                    "id": 23,
+                    "isCorrect": false,
+                    "value": "Cape Canaveral"
+                },
+                {
+                    "id": 24,
+                    "isCorrect": false,
+                    "value": "Kennedy Space Center"
+                }
+            ]
+        },
+        {
+            "id": 9,
+            "value": "What is the national symbol of Kazakhstan?",
+            "answers": [
+                {
+                    "id": 25,
+                    "isCorrect": true,
+                    "value": "Golden Eagle"
+                },
+                {
+                    "id": 26,
+                    "isCorrect": false,
+                    "value": "Lion"
+                },
+                {
+                    "id": 27,
+                    "isCorrect": false,
+                    "value": "Tiger"
+                }
+            ]
+        },
+        {
+            "id": 10,
+            "value": "Which famous writer from Kazakhstan won the Nobel Prize in Literature?",
+            "answers": [
+                {
+                    "id": 28,
+                    "isCorrect": true,
+                    "value": "Orhan Pamuk"
+                },
+                {
+                    "id": 29,
+                    "isCorrect": false,
+                    "value": "Fyodor Dostoevsky"
+                },
+                {
+                    "id": 30,
+                    "isCorrect": false,
+                    "value": "Leo Tolstoy"
+                }
+            ]
+        }
+    ],
+    "duration": 30
+}

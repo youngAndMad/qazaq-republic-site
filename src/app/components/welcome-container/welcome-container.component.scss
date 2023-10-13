@@ -1,0 +1,72 @@
+$white: #ffffff;
+$black: #000000;
+$primary1: #f89cab;
+$btnColor: #db4f66;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+@mixin main-font {
+    font-family: "poppins", sans-serif;
+}
+
+@mixin hero_btn($col1,
+    $col2,
+    $pad1,
+    $pad2,
+    $bRadius ) {
+    display: inline-block;
+    padding: $pad1 $pad2;
+    background-color: $col1;
+    color: $col2;
+    border: 1px solid $col1;
+    border-radius: $bRadius;
+    transition: all .3s;
+    text-decoration: none;
+
+    &:hover {
+        background-color: transparent;
+        color: $col1;
+    }
+}
+
+.detail-box {
+    padding-left: 45px;
+    margin: 45px 0;
+
+    h1 {
+        font-weight: bold;
+        font-size: 3.5rem;
+        margin-bottom: 10px;
+    }
+
+    a {
+        @include hero_btn(#db4566, $white, 10px, 40px, 5px);
+        margin-top: 25px;
+        text-transform: uppercase;
+    }
+}
+
+.img-box {
+    display: flex;
+    justify-content: center;
+    padding: 100px 0 0 0;
+    align-items: end;
+
+    img {
+        width: 275px;
+    }
+}
+
+.welcome_title {
+    font-size: 5rem;
+    line-height: 1;
+    font-weight: 700;
+}
+
+.container-fluid {
+    min-height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #db4f66;
+}

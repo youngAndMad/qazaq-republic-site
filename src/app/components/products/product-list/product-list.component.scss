@@ -1,0 +1,91 @@
+$white: #ffffff;
+$black: #000000;
+$primary1: #f89cab;
+$btnColor: #db4f66;
+
+
+@mixin hero_btn($col1,
+    $col2,
+    $pad1,
+    $pad2,
+    $bRadius) {
+    display: inline-block;
+    padding: $pad1 $pad2;
+    background-color: $col1;
+    color: $col2;
+    border: 1px solid $col1;
+    border-radius: $bRadius;
+    transition: all .3s;
+
+    &:hover {
+        background-color: transparent;
+        color: $col1;
+    }
+}
+
+
+.product_section {
+    .heading_container {
+        margin-bottom: 20px;
+    }
+
+    .box {
+        background-color: #eeeeee;
+        position: relative;
+        padding: 10px;
+        margin-top: 25px;
+
+        a {
+            color: $black;
+            text-decoration: none;
+        }
+
+        .img-box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 15px 30px;
+            height: 245px;
+
+            img {
+                max-width: 100%;
+                max-height: 145px;
+            }
+        }
+
+        .detail-box {
+            display: flex;
+            justify-content: space-between;
+
+            h6 {
+                span {
+                    color: $btnColor;
+                }
+            }
+        }
+
+        .new {
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: $white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 100%;
+            font-size: 15px;
+        }
+    }
+
+    .btn-box {
+        display: flex;
+        justify-content: center;
+        margin-top: 45px;
+
+        a {
+            @include hero_btn(#f16179, $white, 10px, 40px, 5px);
+        }
+    }
+}

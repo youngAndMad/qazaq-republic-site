@@ -1,0 +1,76 @@
+$white: #ffffff;
+$black: #000000;
+$primary1: #f89cab;
+$btnColor: #db4f66;
+
+@mixin hero_btn($col1,
+    $col2,
+    $pad1,
+    $pad2,
+    $bRadius) {
+    display: inline-block;
+    padding: $pad1 $pad2;
+    background-color: $col1;
+    color: $col2;
+    border: 1px solid $col1;
+    border-radius: $bRadius;
+    transition: all .3s;
+
+    &:hover {
+        background-color: transparent;
+        color: $col1;
+    }
+}
+
+.saving_section {
+    padding-left: 45px;
+    padding-right: 45px;
+
+    .box {
+        padding-top: 45px;
+        background-color: #7fd7eb;
+        color: $white;
+        border-radius: 15px;
+    }
+
+    .row {
+        align-items: center;
+    }
+
+    .img-box {
+        padding: 15px 0 0 25px;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .detail-box {
+        padding: 0 25px;
+
+        p {
+            margin-top: 5px;
+        }
+
+        .btn-box {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 35px -5px 0;
+
+            a {
+                width: 165px;
+                text-align: center;
+                margin: 5px;
+                text-decoration: none;
+            }
+
+            .btn1 {
+                @include hero_btn(#109dbd, $white, 10px, 0, 0)
+            }
+
+            .btn2 {
+                @include hero_btn($white, $black, 10px, 0, 0)
+            }
+        }
+    }
+}

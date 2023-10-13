@@ -1,0 +1,32 @@
+<div class="container container-result">
+	<h3 class="text-center mt-5 mb-5 result-title">Quiz Results</h3>
+	<table class="table">
+		<thead>
+			<tr>
+				<th>Id</th>
+				<th>Username</th>
+				<th>Point</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr *ngFor="
+            let quizResult of quizResults
+              | paginate
+                : {
+                    itemsPerPage: tableSize,
+                    currentPage: page,
+                    totalItems: count
+                  };
+            let i = index
+          ">
+				<th scope="row">{{quizResult.id }}</th>
+				<td>{{ quizResult.username }}</td>
+				<td>{{ quizResult.total }}</td>
+			</tr>
+		</tbody>
+	</table>
+	<div class="d-flex justify-content-center">
+		<pagination-controls previousLabel="Prev" nextLabel="Next" (pageChange)="onTableDataChange($event)">
+		</pagination-controls>
+	</div>
+</div>

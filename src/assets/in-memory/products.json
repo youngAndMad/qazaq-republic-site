@@ -1,0 +1,42 @@
+[
+    {
+        "name": "T Shirt",
+        "price": 10,
+        "src": "assets/images/p1.png"
+    },
+    {
+        "name": "Blouse",
+        "price": 100,
+        "src": "assets/images/p2.png"
+    },
+    {
+        "name": "Sweatshirt",
+        "price": 1000,
+        "src": "assets/images/p3.png"
+    },
+    {
+        "name": "T Shirt",
+        "price": 10,
+        "src": "assets/images/p4.png"
+    },
+    {
+        "name": "Blouse",
+        "price": 100,
+        "src": "assets/images/p5.png"
+    },
+    {
+        "name": "Sweatshirt",
+        "price": 1000,
+        "src": "assets/images/p6.png"
+    },
+    {
+        "name": "Sweatshirt",
+        "price": 1000,
+        "src": "assets/images/p7.png"
+    },
+    {
+        "name": "Sweatshirt",
+        "price": 1000,
+        "src": "assets/images/p8.png"
+    }
+]

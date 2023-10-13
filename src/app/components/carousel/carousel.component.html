@@ -1,0 +1,32 @@
+<section id="testimonial" class="client_section">
+	<div class="client_section__content">
+		<div class="container">
+			<div class="heading_container heading_center">
+				<h2>
+					Feedbacks
+				</h2>
+			</div>
+		</div>
+		<div class="slider-wrapper">
+			<div *ngFor="let slide of slides; let i = index" [@slideAnimation]>
+				<div *ngIf="i === currentSlide">
+					<div class="box">
+						<h5>
+							{{slide.authorFullname}}
+						</h5>
+						<h6>
+							{{slide.authorAddress}}
+						</h6>
+						<p>{{slide.value}}</p>
+					</div>
+				</div>
+			</div>
+			<button class="control prev" (click)="onPreviousClick()">
+				<span class="arrow left"></span>
+			</button>
+			<button class="control next" (click)="onNextClick()">
+				<span class="arrow right"></span>
+			</button>
+		</div>
+	</div>
+</section>

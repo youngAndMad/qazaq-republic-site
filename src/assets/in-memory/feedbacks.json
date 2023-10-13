@@ -1,0 +1,37 @@
+[
+    {
+        "value": "Great product! Very satisfied.",
+        "authorFullname": "John Doe",
+        "authorAddress": "123 Main St, City, Country"
+    },
+    {
+        "value": "Excellent service. Highly recommended.",
+        "authorFullname": "Jane Smith",
+        "authorAddress": "456 Elm St, Town, Country"
+    },
+    {
+        "value": "Could be better. Needs improvement.",
+        "authorFullname": "Alice Johnson",
+        "authorAddress": "789 Oak St, Village, Country"
+    },
+    {
+        "value": "Good experience overall.",
+        "authorFullname": "Bob Wilson",
+        "authorAddress": "101 Pine St, Suburb, Country"
+    },
+    {
+        "value": "Not what I expected. Disappointed.",
+        "authorFullname": "Eve Anderson",
+        "authorAddress": "202 Maple St, Rural, Country"
+    },
+    {
+        "value": "Outstanding quality and value.",
+        "authorFullname": "David Brown",
+        "authorAddress": "303 Cedar St, Hamlet, Country"
+    },
+    {
+        "value": "Adequate, but nothing special.",
+        "authorFullname": "Sarah Lee",
+        "authorAddress": "404 Birch St, Outskirts, Country"
+    }
+]

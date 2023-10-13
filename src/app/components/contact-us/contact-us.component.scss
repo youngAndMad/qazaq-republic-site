@@ -1,0 +1,85 @@
+$white: #ffffff;
+$black: #000000;
+$primary1: #f89cab;
+$btnColor: #db4f66;
+
+@mixin main-font {
+    font-family: "poppins", sans-serif;
+}
+
+@mixin hero_btn($col1,
+    $col2,
+    $pad1,
+    $pad2,
+    $bRadius) {
+    display: inline-block;
+    padding: $pad1 $pad2;
+    background-color: $col1;
+    color: $col2;
+    border: 1px solid $col1;
+    border-radius: $bRadius;
+    transition: all .3s;
+
+    &:hover {
+        background-color: transparent;
+        color: $col1;
+    }
+}
+
+.contact_section {
+    position: relative;
+
+
+    .container-bg {
+        box-shadow: 0 0 25px 0 rgba($color: #000000, $alpha: .1);
+
+    }
+
+    .heading_container {
+        margin-bottom: 30px;
+    }
+
+    .row {
+        align-items: stretch;
+    }
+
+    form {
+        padding-right: 35px;
+        padding: 45px 20px;
+    }
+
+    input {
+        width: 100%;
+        border: 1px solid #919191;
+        height: 50px;
+        margin-bottom: 25px;
+        padding-left: 25px;
+        background-color: transparent;
+        outline: none;
+        color: #101010;
+
+        &::placeholder {
+            color: #131313;
+        }
+
+        &.message-box {
+            height: 120px;
+        }
+    }
+
+    button {
+        @include hero_btn($btnColor, $white, 12px, 45px, 0);
+        display: block;
+        color: #fff;
+        margin: 35px auto 0 auto;
+    }
+
+    .map_container {
+        height: 100%;
+        min-height: 375px;
+
+        .map-responsive {
+            height: 100%;
+        }
+    }
+}

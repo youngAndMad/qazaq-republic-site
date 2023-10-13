@@ -1,0 +1,19 @@
+.why_section {
+    .box {
+        text-align: center;
+        margin-top: 45px;
+        background-color: #f9f8f7;
+        padding: 25px;
+        border-radius: 5px;
+
+        .img-box {
+            margin-bottom: 15px;
+
+            svg {
+                width: 55px;
+                height: auto;
+                fill: #320b57;
+            }
+        }
+    }
+}

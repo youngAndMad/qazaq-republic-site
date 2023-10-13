@@ -8,7 +8,7 @@
 		<div class="row">
 			<div class="col-sm-6 col-md-4 col-lg-3" *ngFor="let product of products">
 				<div class="box">
-					<a href="">
+					<a href="javascript:void(0)" >
 						<div class="img-box">
 							<img [src]="product.src" alt="{{ product.name }}">
 						</div>
@@ -34,3 +34,33 @@
 		</div>
 	</div>
 </section>
+<div id="myModal" class="modal" *ngIf="currentProduct">
+	<div class="modal-content">
+		<span class="close" id="closeModal" > &times;</span>
+		<div class="col-sm-6 col-md-4 col-lg-3">
+			<div class="box">
+				<a href="">
+					<div class="img-box">
+						<img [src]="currentProduct.src" alt="{{ currentProduct.name }}">
+					</div>
+					<div class="detail-box">
+						<h6>
+							{{ currentProduct.name }}
+						</h6>
+						<h6>
+							Price
+							<span>
+								{{ currentProduct.price | currency:'$'}}
+							</span>
+						</h6>
+					</div>
+					<div class="new">
+						<span>
+							New
+						</span>
+					</div>
+				</a>
+			</div>
+		</div>
+	</div>
+</div>

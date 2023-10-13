@@ -31,17 +31,6 @@ export class QuizComponent implements OnInit {
 		this.total = 0
 	}
 
-	//   ngOnInit(): void {
-	//     let quizSubmission = localStorage.getItem('quiz-submission')
-	//     if(quizSubmission){
-	//       this.review = JSON.parse(quizSubmission)
-	//       this.isReview = true
-	//     }else{
-	//       this.quizService.getQuiz().subscribe(res => {
-	//         this.quiz = res
-	//       })  
-	//     }
-	//   }
 	ngOnInit(): void {
 		this.quizService.getQuiz().subscribe(res => {
 			this.quiz = res

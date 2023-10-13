@@ -11,12 +11,12 @@
 			<div *ngFor="let slide of slides; let i = index" [@slideAnimation]>
 				<div *ngIf="i === currentSlide">
 					<div class="box">
-						<h5>
+						<h4>
 							{{slide.authorFullname}}
-						</h5>
-						<h6>
+						</h4>
+						<h3>
 							{{slide.authorAddress}}
-						</h6>
+						</h3>
 						<p>{{slide.value}}</p>
 					</div>
 				</div>

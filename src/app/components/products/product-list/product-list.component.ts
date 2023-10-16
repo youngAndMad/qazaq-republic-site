@@ -1,6 +1,7 @@
 import {Component, OnInit, inject} from '@angular/core';
 import {Product} from 'src/app/domain/entity/product.interface';
 import {ProductService} from 'src/app/service/product.service';
+import {ModalService} from "../../../service/modal.service";
 
 @Component({
   selector: 'app-product-list',
@@ -10,6 +11,8 @@ import {ProductService} from 'src/app/service/product.service';
 export class ProductListComponent implements OnInit {
 
   private productService = inject(ProductService)
+  public modalService = inject(ModalService)
+
 
   products: Product[]
   currentProduct: Product | null = null

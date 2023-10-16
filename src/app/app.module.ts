@@ -19,6 +19,8 @@ import { SavingsComponent } from './components/savings/savings.component';
 import { QuizComponent } from './components/quiz/quiz/quiz.component';
 import { QuizResultPageComponent } from './components/quiz/quiz-result-page/quiz-result-page.component';
 import { MatDialogModule} from '@angular/material/dialog';
+import { ModalComponent } from './components/modal/modal.component';
+import { ProductComponent } from './components/products/product/product.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +36,9 @@ import { MatDialogModule} from '@angular/material/dialog';
     SavingsComponent,
     QuizComponent,
     QuizResultPageComponent,
-    HomeComponent
+    HomeComponent,
+    ModalComponent,
+    ProductComponent,
   ],
   imports: [
     BrowserModule,
